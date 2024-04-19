@@ -1,5 +1,7 @@
 
+using MassTransit;
 using MessagingApp;
+using MessagingApp.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 

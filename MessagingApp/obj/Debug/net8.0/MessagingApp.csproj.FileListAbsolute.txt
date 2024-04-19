@@ -21,3 +21,4 @@
 /Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueueExample/MessagingApp/obj/Debug/net8.0/MessagingApp.dll
 /Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueueExample/MessagingApp/obj/Debug/net8.0/refint/MessagingApp.dll
 /Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueueExample/MessagingApp/obj/Debug/net8.0/MessagingApp.pdb
+/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueueExample/MessagingApp/obj/Debug/net8.0/MessagingApp.sourcelink.json
