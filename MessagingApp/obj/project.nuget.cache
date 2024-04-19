@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GAQv3S3W5SFWKT1ZUizu9O6LYq3sBKV9PimCsRl3injY5IlRmNpdxrUerKGhoIdEpjrZep5PB3/Cm5Re1fKfYw==",
+  "dgSpecHash": "2zhPmennlm1GWY2ErWF7CtrFZFGfto9WE/shk8XFc/V2R9jOry7WO2Q6fFg9ALs7+QdCVtivin9ZLFm1/Br/Zg==",
   "success": true,
-  "projectFilePath": "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueueExample/MessagingApp/MessagingApp.csproj",
+  "projectFilePath": "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueue/MessagingApp/MessagingApp.csproj",
   "expectedPackageFiles": [
     "/Users/yasartopuk/.nuget/packages/confluent.kafka/2.3.0/confluent.kafka.2.3.0.nupkg.sha512",
     "/Users/yasartopuk/.nuget/packages/librdkafka.redist/2.3.0/librdkafka.redist.2.3.0.nupkg.sha512",

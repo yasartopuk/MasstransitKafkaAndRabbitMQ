@@ -1573,11 +1573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueueExample/MessagingApp/MessagingApp.csproj",
+      "projectUniqueName": "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueue/MessagingApp/MessagingApp.csproj",
       "projectName": "MessagingApp",
-      "projectPath": "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueueExample/MessagingApp/MessagingApp.csproj",
+      "projectPath": "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueue/MessagingApp/MessagingApp.csproj",
       "packagesPath": "/Users/yasartopuk/.nuget/packages/",
-      "outputPath": "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueueExample/MessagingApp/obj/",
+      "outputPath": "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueue/MessagingApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yasartopuk/.nuget/NuGet/NuGet.Config"
@@ -1648,7 +1648,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/yasartopuk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
