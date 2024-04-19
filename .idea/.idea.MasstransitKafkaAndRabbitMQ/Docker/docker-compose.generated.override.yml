@@ -1,0 +1,22 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  messagingapp:
+    build:
+      context: "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueue"
+      dockerfile: "MessagingApp/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/MessagingApp.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "messagingapp:dev"
+    ports: []
+    volumes:
+    - "/Users/yasartopuk/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueue/MessagingApp:/app:rw"
+    - "/Users/yasartopuk/Documents/Belgelerim/RDP Paylaşım/Projects/Rider/MessageQueue:/src:rw"
+    working_dir: "/app"

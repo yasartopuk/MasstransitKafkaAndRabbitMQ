@@ -1,0 +1,71 @@
+﻿version: '3.8'
+
+services:
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    networks:
+      - messagingapp-network
+
+  zookeeper:
+    image: 'bitnami/zookeeper:latest'
+    ports:
+      - '2181:2181'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+    networks:
+      - messagingapp-network
+
+  kafka:
+    image: 'bitnami/kafka:latest'
+    ports:
+      - '9092:9092'
+    environment:
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
+    #command: ["/bin/bash", "-c", "/kafka_init.sh"]
+    volumes:
+      - ./kafka_init.sh:/kafka_init.sh
+    depends_on:
+      - zookeeper
+    networks:
+      - messagingapp-network
+  
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: "kafka:9092"
+      JVM_OPTS: "-Xms32M -Xmx64M"
+      SERVER_SERVLET_CONTEXTPATH: "/"
+    depends_on:
+      - kafka
+    networks:
+      - messagingapp-network
+  
+  messagingapp:
+    image: messagingapp
+    build:
+      context: .
+      dockerfile: MessagingApp/Dockerfile
+    ports:
+      - "5101:8080"
+      - "51011:8081"
+    depends_on:
+      - rabbitmq
+      - kafka
+    networks:
+      - messagingapp-network
+
+networks:
+  messagingapp-network:
+    driver: bridge
